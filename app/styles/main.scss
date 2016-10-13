@@ -68,6 +68,7 @@ header {
                 padding-left: 0;
                 margin-bottom: 0;
                 li {
+                    position: relative;
                     list-style: none;
                     display: inline-block;
                     margin: 3px 5%;
@@ -76,6 +77,35 @@ header {
                         color: #fff;
                         text-decoration: none;
                         font-size: 14px;
+                    }
+                    ul {
+                        position: absolute;
+                        // left: -9999px;
+                        // opacity: 0;
+                        display: none;
+                        top: 30px;
+                        left: -65px;
+                        z-index: 100;
+                        li {
+                            background-color: #CBCBCB;
+                            width: 200px;
+                            padding: 5px 10px;
+                            margin: 0;
+                            border-bottom: 1px solid #C4C4C4;
+                            font-family: "MyriadProCondRegular", sans-serif;
+                            font-weight: 400;
+                            &:hover {
+                                background-color: rgba(31, 235, 38, 1);
+                                a {
+                                    color: #fff;
+                                }
+                            }
+                            a {
+                                text-transform: none;
+                                color: #006837;
+                                font-size: 16px;
+                            }
+                        }
                     }
                 }
             }
@@ -86,17 +116,18 @@ header {
 #header-bg {
     margin-top: 20px;
     background-image: url("../images/header-bg.jpg");
-    height: 800px;
+    height: 550px;
     background-size: cover;
+    background-position: 50% 50%;
     h1 {
         color: #fff;
         text-transform: uppercase;
-        font-family:"MyriadProCondRegular",sans-serif;
+        font-family: "MyriadProCondRegular", sans-serif;
         font-weight: 400;
         line-height: 75px;
-    font-size: 53px;
-    display: inline-block;
-    margin-top: 30px;
+        font-size: 53px;
+        display: inline-block;
+        margin-top: 30px;
     }
     .header-bg--consultation {
         margin-top: 15px;
@@ -123,7 +154,7 @@ header {
         }
         .header-bg--consultation_body {
             p {
-              margin: 0;
+                margin: 0;
                 input {
                     width: 250px;
                     height: 35px;
@@ -132,45 +163,327 @@ header {
                     font-size: 15px;
                     padding: 6px 6px 6px 30px;
                     color: #6B6B6B;
-                    
-
                 }
+            }
+            .first-input {
+                margin-top: 15px;
+                margin-bottom: 10px;
+                .person {
+                    background-image: url("../images/person.png");
+                    height: 24px;
+                    width: 24px;
+                    position: absolute;
+                    top: 37%;
+                    left: 17%;
+                }
+            }
+            .next-input {
+                .tell {
+                    background-image: url("../images/tell.png");
+                    height: 24px;
+                    width: 24px;
+                    position: absolute;
+                    top: 52%;
+                    left: 17%;
+                }
+            }
+            button {
+                margin-top: 20px;
+                background-image: url("../images/header-bg-button.png");
+                height: 38px;
+                width: 180px;
+                // background-color: #1ac419;
+                border: none;
+                color: #fff;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .indi-spending {
+        color: #23eb29;
+        text-transform: uppercase;
+        font-family: "MyriadProCondRegular", sans-serif;
+        font-weight: 400;
+        position: relative;
+        &:after {
+            position: absolute;
+            content: "";
+            display: block;
+            background-image: url("../images/vertical-line.png");
+            width: 6px;
+            height: 230px;
+            right: -20px;
+            top: -55px;
+        }
+        p {
+            text-align: right;
+            margin: 0;
+            line-height: 40px;
+            span {
+                background-color: rgba(0, 0, 0, .8);
+                font-size: 42px;
+                padding: 0 20px;
+                font-family: "MyriadProCondBold", sans-serif;
+                font-weight: 700;
+            }
+        }
+    }
+    .design-after-relize {
+        margin-top: -10px;
+        p {
+            margin: 0;
+            line-height: 0;
+            span {
+                color: #fff;
+                font-family: "MyriadProCondRegular", sans-serif;
+                font-weight: 400;
+                text-transform: uppercase;
+                font-size: 30px;
+                line-height: 50px;
+                text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.61);
+            }
+        }
+    }
+}
 
+#services {
+    .bigg-letter {
+        text-transform: uppercase;
+        line-height: 204px;
+        color: #37B20D;
+        font-size: 170px;
+        letter-spacing: -5px;
+        font-family: 'MyriadProCondRegular';
+        font-weight: 400;
+    }
+    .design-pensil {
+        margin-top: 30px;
+        p {
+            margin-bottom: 0;
+            font-family: 'MyriadProCondRegular';
+            font-weight: 400;
+            font-size: 50px;
+            text-transform: uppercase;
+            color: #37B20D;
+            &>img {
+                margin-bottom: 10px;
+                margin-right: 15px;
             }
-            .first-input{
-              margin-top: 15px;
-              margin-bottom: 10px;
-              
-              .person{
-                      background-image: url("../images/person.png");
-                      height: 24px;
-                      width: 24px;
-                      position: absolute;
-                      top: 37%;
-                      left: 17%;
-                    }
+            &>a>img {
+                margin-bottom: 15px;
+                margin-left: 20px;
             }
-            .next-input{
+        }
+        ul {
+            list-style-image: url("../images/list-style.png");
+            margin-left: 70px;
+            margin-top: -5px;
+            li {
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: 'MyriadProCondRegular';
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+    .implementation-block {
+        margin-top: -40px;
+        img {
+            margin-bottom: 30px;
+        }
+    }
+    .implementation {
+        p {
+            margin-bottom: 0;
+            font-family: 'MyriadProCondRegular';
+            font-weight: 400;
+            font-size: 50px;
+            text-transform: uppercase;
+            color: #37B20D;
+        }
+        ul {
+            list-style-image: url("../images/list-style.png");
+            margin-left: 0px;
+            margin-top: -5px;
+            li {
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: 'MyriadProCondRegular';
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+    .maf {
+        margin-top: 40px;
+        p {
+            margin-bottom: 0;
+            font-family: 'MyriadProCondRegular';
+            font-weight: 400;
+            font-size: 50px;
+            text-transform: uppercase;
+            color: #37B20D;
+            &>img {
+                margin-bottom: 10px;
+                margin-right: 15px;
+            }
+            &>a>img {
+                margin-bottom: 15px;
+                margin-left: 20px;
+            }
+        }
+        ul {
+            list-style-image: url("../images/list-style.png");
+            margin-left: 70px;
+            margin-top: -5px;
+            li {
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: 'MyriadProCondRegular';
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+    .water-build {
+        margin-top: -20px;
+        a>img {
+            margin-top: 25px;
+        }
+        p {
+            margin-bottom: 0;
+            font-family: 'MyriadProCondRegular';
+            font-weight: 400;
+            font-size: 40px;
+            text-transform: uppercase;
+            color: #37B20D;
+        }
+        ul {
+            list-style-image: url("../images/list-style.png");
+            margin-left: 70px;
+            margin-top: -5px;
+            li {
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: 'MyriadProCondRegular';
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+    .ser {
+        margin-top: -120px;
+        a>img {
+            margin-top: 15px;
+        }
+        p {
+            margin-bottom: 0;
+            font-family: 'MyriadProCondRegular';
+            font-weight: 400;
+            font-size: 50px;
+            text-transform: uppercase;
+            color: #37B20D;
+        }
+        ul {
+            list-style-image: url("../images/list-style.png");
+            // margin-left: 70px;
+            margin-top: -5px;
+            li {
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: 'MyriadProCondRegular';
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
 
-              .tell{
-                 background-image: url("../images/tell.png");
-                      height: 24px;
-                      width: 24px;
-                      position: absolute;
-                      top: 52%;
-                      left: 17%;
-              }
+#about-company {
+    margin-top: 30px;
+    background-image: url("../images/about-company.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    background-position: 50% 60%;
+}
+
+#design-consultation {
+    background-color: #76818F;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    p {
+        color: #fff;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 31px;
+        font-family: "MyriadProCondRegular";
+        font-weight: 400;
+        line-height: 35px;
+        text-transform: uppercase;
+    }
+    form {
+        input {
+            width: 250px;
+            height: 35px;
+            border-radius: 2px;
+            border: 1px solid #b9b9b9;
+            font-size: 15px;
+            padding: 6px 6px 6px 30px;
+            color: #6B6B6B;
+            margin-right: 3%;
+        }
+        .first-input {
+            position: relative;
+            .person {
+                background-image: url("../images/person.png");
+                height: 24px;
+                width: 24px;
+                position: absolute;
+                top: -15%;
+                left: 1%;
             }
-            button{
-              margin-top: 20px;
-              background-image: url("../images/header-bg-button.png");
-              height: 38px;
-              width: 180px;
-              // background-color: #1ac419;
-              border: none;
-              color: #fff;
-              text-transform: uppercase;
+        }
+        .next-input {
+            position: relative;
+            .tell {
+                background-image: url("../images/tell.png");
+                height: 24px;
+                width: 24px;
+                position: absolute;
+                top: -15%;
+                left: 1%;
             }
+        }
+        button{
+            border: none;
+           
+           height: 33px;
+           width: 107px;
+           background-color: #5bc305;
+           text-transform: uppercase;
+           color: #fff;
+           font-size: 20px;
+           line-height: 1;
+    border-radius: 3px;
+    font-family:"MyriadProBold";
+    font-weight: 700;
         }
     }
 }

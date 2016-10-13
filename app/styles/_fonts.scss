@@ -28,3 +28,13 @@
     font-style: normal;
     font-weight: 400;
 }
+
+@font-face {
+    font-family: "MyriadProCondBold";
+    src: url("../fonts/MyriadProCondBold/MyriadProCondBold.eot");
+    src: url("../fonts/MyriadProCondBold/MyriadProCondBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProCondBold/MyriadProCondBold.woff") format("woff"),
+    url("../fonts/MyriadProCondBold/MyriadProCondBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
