@@ -27,6 +27,20 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <header>
+        <div class="hidden">
+            <form action="" id="form-callback" class="form-call center-block">
+            <p>заказать <b>обратный звонок</b></p>
+                <div class="first-input">
+                    <input type="text" class="first-line-form center-block" id="name" name="Name" placeholder="Введите имя" required="">
+                    <i class="person"></i>
+                </div>
+                <div class="next-input">
+                    <input type="text" class="second-line-form center-block" id="email" name="Number/Email" placeholder="Введите номер телефона" required="">
+                    <i class="tell"></i>
+                </div>
+                <button class="center-block sup">отправить</button>
+            </form>
+        </div>
         <div class="container">
             <div class="top-nav">
                 <div class="row">
@@ -42,7 +56,7 @@
                                 <span><img src="images/tell-ico.png" alt="" class="pull-left">8 <small>499</small><b> 394 24 47</b></span>
                             </div>
                             <div class="col-sm-3 top-nav--back-call text-center">
-                                <a href="">заказать обратный звонок</a>
+                                <a href="#form-callback" class="popup">заказать обратный звонок</a>
                             </div>
                         </div>
                         <div class="row">
@@ -50,14 +64,90 @@
                                 <nav>
                                     <ul>
                                         <li><a href="/">О компании </a></li>
-                                        <li><a href="/">Услуги</a>
-                                            <ul>
-                                                <li><a href="?">Ландшафтное проектирование</a></li>
-                                                <li><a href="/">Реализация ландшафта</a></li>
-                                                <li><a href="/">Уход и обсуживание</a></li>
+                                        <li id="first-link"><a href="/">Услуги</a>
+                                            <ul id="inside-menu">
+                                                <li id="inside-menu-menu"><a href="?">Ландшафтное проектирование</a>
+                                                    <ul>
+                                                        <li><a href="">Ландшафтное проектирование часных участков</a></li>
+                                                        <li id="menu-inside-menu"><a href="">Выберете стиль ланждшафтного дизайна</a>
+                                                            <ul>
+                                                                <li><a href="">Английский стиль</a></li>
+                                                                <li><a href="">Кантри стиль</a></li>
+                                                                <li><a href="">Французкий стиль</a></li>
+                                                                <li><a href="">Китайский стиль</a></li>
+                                                                <li><a href="">Хайтек стиль</a></li>
+                                                                <li><a href="">Прованс стиль</a></li>
+                                                                <li><a href="">Минимализм</a></li>
+                                                                <li><a href="">Пейзажный стиль</a></li>
+                                                                <li><a href="">Регулярный стиль</a></li>
+                                                                <li><a href="">Скандинавский стиль</a></li>
+                                                                <li><a href="">Средиземноморский стиль</a></li>
+                                                                <li><a href="">Японский стиль</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="">3D ландшафтный дизайн. Трехмерный дизайн</a></li>
+                                                        <li><a href="">Эскизное проектирование.</a></li>
+                                                        <li><a href="">Проектирование городских территорий</a></li>
+                                                        <li><a href="">Проектирование приусадебного участка</a></li>
+                                                        <li><a href="">Ландшафтный дизайн сада</a></li>
+                                                        <li><a href="">Ландшафтный дизайн дачного участка</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li id="inside-menu-menu-second"><a href="/">Реализация ландшафта</a>
+                                                    <ul>
+                                                        <li><a href="">Посадка крупномерных растений</a></li>
+                                                        <li><a href="">Газоны рулонные и посевные</a></li>
+                                                        <li><a href="">Мощение дорожек</a></li>
+                                                        <li><a href="">Автоматический полив</a></li>
+                                                        <li><a href="">Освещение</a></li>
+                                                        <li><a href="">Дренаж</a></li>
+                                                        <li id="inside-four"><a href="">Малые архитектурные формы</a>
+                                                            <ul>
+                                                                <li><a href="">Беседки-барбекю</a></li>
+                                                                <li><a href="">Бани</a></li>
+                                                                <li><a href="">Кострище</a></li>
+                                                                <li><a href="">Летние кухни</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li id="inside-five"><a href="">Ландшафтное озеленение</a>
+                                                            <ul>
+                                                                <li><a href="">Цветники</a></li>
+                                                                <li><a href="">Хвоэтумы</a></li>
+                                                                <li><a href="">Рокарии</a></li>
+                                                                <li><a href="">Альпийские горки</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li id="inside-six"><a href="">Создание водоемов</a>
+                                                            <ul>
+                                                                <li><a href="">Создание прудов</a></li>
+                                                                <li><a href="">Создание каскада</a></li>
+                                                                <li><a href="">Создание рыболовного пруда</a></li>
+                                                                <li><a href="">Создание болота декоративного</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li id="inside-menu-menu-three"><a href="/">Уход и обсуживание</a>
+                                                    <ul>
+                                                        <li><a href="">Уход за участком после посадок</a></li>
+                                                        <li><a href="">Уход существующих насаждений</a></li>
+                                                    </ul>
+                                                </li>
                                             </ul>
                                         </li>
-                                        <li><a href="/">Цены</a></li>
+                                        <li ul="inside-seven"><a href="/">Цены</a>
+                                            <ul>
+                                                <li><a href="">Подготовительные работы</a></li>
+                                                <li><a href="">Ландшафтное проектирование</a></li>
+                                                <li><a href="">Инженерные коммуникации</a></li>
+                                                <li><a href="">Строительство и мощение дорожек</a></li>
+                                                <li><a href="">Устройство подпорных стен</a></li>
+                                                <li><a href="">Устройство водных сооружений:</a></li>
+                                                <li><a href="">Устройство газонов</a></li>
+                                                <li><a href="">Устройство зеленых насаждений</a></li>
+                                                <li><a href="">Малые архитектурные формы</a></li>
+                                            </ul>
+                                        </li>
                                         <li><a href="/">Портфолио</a></li>
                                         <li><a href="/">Контакты</a></li>
                                     </ul>
@@ -638,7 +728,7 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12 callback-footer text-center">
-                            <a href="">заказать обратный звонок</a>
+                            <a href="#form-callback" class="popup">заказать обратный звонок</a>
                         </div>
                     </div>
                     <div class="row">
