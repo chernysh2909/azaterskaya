@@ -1206,4 +1206,96 @@ footer {
     }
 }
 
+#pod{
+    h2{
+        color: #53CB3A;
+        font-size: 33px;
+    }
+    table {
+       
+        .green{
+            background-color: rgba(55,178,13,0.2);
+            color: #686868;
+            font-size: 18px;
+            tr{
+                td{
+                    padding: 20px 0;
+                    border-right: 1px solid #CBCBCB;
+                }
+            }
+        }
+
+         .grey{
+            background-color: #F5F5F5;
+
+            color: #686868;
+            font-size: 16px;
+            tr{
+                td{
+                    padding: 20px 10px;
+                    border-right: 1px solid #CBCBCB;
+                }
+            }
+        }
+        .white{
+             background-color: #fff;
+
+            color: #686868;
+            font-size: 16px;
+            tr{
+                td{
+                    padding: 20px 10px;
+                    border-right: 1px solid #CBCBCB;
+                }
+            }
+        }
+    }
+}
+
+#prise{
+    h2{
+        color: #53CB3A;
+        font-size: 33px;
+    }
+    table {
+       
+        .green{
+            background-color: rgba(55,178,13,0.2);
+            color: #686868;
+            font-size: 18px;
+            tr{
+                td{
+                    padding: 20px 0;
+                    border-right: 1px solid #CBCBCB;
+                }
+            }
+        }
+
+         .grey{
+            background-color: #F5F5F5;
+
+            color: #686868;
+            font-size: 16px;
+            tr{
+                td{
+                    padding: 20px 10px;
+                    border-right: 1px solid #CBCBCB;
+                }
+            }
+        }
+        .white{
+             background-color: #fff;
+
+            color: #686868;
+            font-size: 16px;
+            tr{
+                td{
+                    padding: 20px 10px;
+                    border-right: 1px solid #CBCBCB;
+                }
+            }
+        }
+    }
+}
+
 @import "media.scss";
