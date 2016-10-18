@@ -35,6 +35,9 @@ $(document).ready(function() {
         $('#inside-six').hover(function() {
             $(this).children('ul').stop(!0, !1, !0).fadeToggle(400)
         }),
+         $('#inside-seven').hover(function() {
+            $(this).children('ul').stop(!0, !1, !0).fadeToggle(400)
+        }),
         $('.popup').magnificPopup(),
 
 
